@@ -1,1 +1,1 @@
-# Covid19app that we created to the PDM class.
+# Covid19app created as Mobile Programming Class final Project
