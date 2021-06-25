@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class CountryListActivity extends AppCompatActivity {
 
     private ActivityCountryListBinding binding;
+
     private String[] name = {"Afghanistan","Aland","Albania","Algeria","Andorra","Angola",
             "Anguilla","Antarctica","Antigua and Barbuda","Argentina Republic","Armenia","Aruba",
             "Australia","Austria","Azerbaijan","Bahamas","Bahrain","Brazil"};
@@ -35,6 +36,7 @@ public class CountryListActivity extends AppCompatActivity {
     private int[] imageId = {R.drawable.af,R.drawable.ax,R.drawable.al,R.drawable.dz,R.drawable.ad,R.drawable.ao,
             R.drawable.ai,R.drawable.aq,R.drawable.ag,R.drawable.ar,R.drawable.am,R.drawable.aw,
             R.drawable.au,R.drawable.at,R.drawable.az,R.drawable.bs,R.drawable.bh,R.drawable.br};
+
     ArrayList<Country> countryArrayList = new ArrayList<>();
 
     @Override

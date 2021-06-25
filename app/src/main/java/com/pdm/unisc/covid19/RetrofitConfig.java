@@ -2,6 +2,7 @@ package com.pdm.unisc.covid19;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class RetrofitConfig {
     private final Retrofit retrofit;
@@ -10,6 +11,7 @@ public class RetrofitConfig {
     public RetrofitConfig() {
         this.retrofit = new Retrofit.Builder()
                 .baseUrl(this.urlBase)
+                .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }

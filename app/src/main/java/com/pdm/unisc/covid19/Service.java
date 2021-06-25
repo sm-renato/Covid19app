@@ -9,11 +9,10 @@ import retrofit2.http.Headers;
 import retrofit2.http.Url;
 
 public interface Service {
-    @Headers("Content-Type: application/json")
+
     @GET
     Call<All> loadAll(@Url String url);
 
-    @Headers("Content-Type: application/json")
     @GET
     Call<Object> loadCountryAll(@Url String url);
 

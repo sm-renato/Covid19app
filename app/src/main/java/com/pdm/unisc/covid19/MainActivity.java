@@ -60,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<All> call, Throwable t) {
 
             }
-
-
         });
     }
 
