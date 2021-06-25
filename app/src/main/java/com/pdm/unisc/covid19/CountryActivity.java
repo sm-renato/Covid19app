@@ -34,6 +34,5 @@ public class CountryActivity extends AppCompatActivity {
             binding.deathsCountry.setText(deaths);
             binding.countryFlag2.setImageResource(imageid);
         }
-
     }
 }

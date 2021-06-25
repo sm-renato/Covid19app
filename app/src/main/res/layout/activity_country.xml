@@ -7,6 +7,7 @@
     tools:context=".CountryActivity">
 
     <ImageView
+        android:layout_marginVertical="15dp"
         android:id="@+id/country_flag2"
         android:layout_width="250dp"
         android:layout_height="250dp"
@@ -14,30 +15,13 @@
         android:src="@drawable/br"
         android:layout_marginTop="20dp"/>
 
-    <TextView
-        android:id="@+id/scode_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/country_flag2"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:text="" />
-
-    <!--View
-        android:layout_below="@+id/scode_info"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray"/-->
-
     <RelativeLayout
         android:id="@+id/relative_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
-        android:background="?attr/selectableItemBackground"
-        android:layout_below="@+id/scode_info"
+        android:layout_below="@+id/country_flag2"
         android:paddingVertical="10dp">
 
         <LinearLayout
@@ -49,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="Location"
                 android:textSize="12sp"/>
 
             <TextView
@@ -74,6 +58,8 @@
         android:id="@+id/relative_population"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_below="@+id/relative_name"
         android:paddingVertical="10dp">
 
@@ -114,7 +100,6 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
-        android:background="?attr/selectableItemBackground"
         android:layout_below="@id/relative_population"
         android:paddingVertical="10dp">
 
@@ -154,7 +139,6 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
-        android:background="?attr/selectableItemBackground"
         android:layout_below="@id/relative_confirmed"
         android:paddingVertical="10dp">
 
@@ -194,7 +178,6 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
-        android:background="?attr/selectableItemBackground"
         android:layout_below="@id/relative_recovered"
         android:paddingVertical="10dp">
 
@@ -221,11 +204,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-    <!--View
-        android:layout_below="@+id/relative_deaths"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray"/-->
 
 </RelativeLayout>

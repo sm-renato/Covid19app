@@ -31,9 +31,9 @@ public class ListAdapter extends ArrayAdapter<Country> {
         TextView countryName = convertView.findViewById(R.id.country_name);
         TextView countryConfirmed = convertView.findViewById(R.id.country_confirmed);
 
-        imageView.setImageResource(country.imageId);
-        countryName.setText(country.name);
-        countryConfirmed.setText(country.confirmed);
+        imageView.setImageResource(country.getImageId());
+        countryName.setText(country.getName());
+        countryConfirmed.setText(country.getConfirmed());
 
         return convertView;
     }
