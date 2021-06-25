@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.pdm.unisc.covid19.model.Country;
+
 import java.util.ArrayList;
 
 public class ListAdapter extends ArrayAdapter<Country> {
@@ -33,7 +35,7 @@ public class ListAdapter extends ArrayAdapter<Country> {
 
         imageView.setImageResource(country.getImageId());
         countryName.setText(country.getName());
-        countryConfirmed.setText(country.getConfirmed());
+        countryConfirmed.setText(String.valueOf(country.getConfirmed()));
 
         return convertView;
     }

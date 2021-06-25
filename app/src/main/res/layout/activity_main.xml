@@ -18,7 +18,7 @@
         android:layout_marginTop="20dp"/>
 
     <RelativeLayout
-        android:id="@+id/location"
+        android:id="@+id/relative_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/covid_app_logo"
@@ -37,7 +37,7 @@
                 android:textSize="12sp"/>
 
             <TextView
-                android:id="@+id/name_country"
+                android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="World"
@@ -49,16 +49,16 @@
     </RelativeLayout>
 
     <View
-        android:layout_below="@+id/location"
+        android:layout_below="@+id/relative_location"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/gray"/>
 
     <RelativeLayout
-        android:id="@+id/population"
+        android:id="@+id/relative_population"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/location"
+        android:layout_below="@+id/relative_location"
         android:paddingVertical="10dp">
 
 
@@ -75,10 +75,10 @@
                 android:textSize="12sp"/>
 
             <TextView
-                android:id="@+id/population_country"
+                android:id="@+id/population"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="438478343"
+                android:text="7444509223"
                 android:textSize="26sp"
                 android:textColor="@color/black"/>
 
@@ -87,16 +87,16 @@
     </RelativeLayout>
 
     <View
-        android:layout_below="@+id/population"
+        android:layout_below="@+id/relative_population"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/gray"/>
 
     <RelativeLayout
-        android:id="@+id/confirmed"
+        android:id="@+id/relative_confirmed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/population"
+        android:layout_below="@id/relative_population"
         android:paddingVertical="10dp">
 
         <LinearLayout
@@ -112,10 +112,10 @@
                 android:textSize="12sp"/>
 
             <TextView
-                android:id="@+id/confirmed_country"
+                android:id="@+id/confirmed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="46823425"
+                android:text="180177347"
                 android:textSize="26sp"
                 android:textColor="@color/black"/>
 
@@ -124,16 +124,16 @@
     </RelativeLayout>
 
     <View
-        android:layout_below="@+id/confirmed"
+        android:layout_below="@+id/relative_confirmed"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/gray"/>
 
     <RelativeLayout
-        android:id="@+id/recovered"
+        android:id="@+id/relative_recovered"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/confirmed"
+        android:layout_below="@id/relative_confirmed"
         android:paddingVertical="10dp">
 
         <LinearLayout
@@ -149,10 +149,10 @@
                 android:textSize="12sp"/>
 
             <TextView
-                android:id="@+id/recovered_country"
+                android:id="@+id/recovered"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="42343"
+                android:text="117911626"
                 android:textSize="26sp"
                 android:textColor="@color/black"/>
 
@@ -161,16 +161,16 @@
     </RelativeLayout>
 
     <View
-        android:layout_below="@+id/recovered"
+        android:layout_below="@+id/relative_recovered"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/gray"/>
 
     <RelativeLayout
-        android:id="@+id/deaths"
+        android:id="@+id/relative_deaths"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recovered"
+        android:layout_below="@id/relative_recovered"
         android:paddingVertical="10dp">
 
         <LinearLayout
@@ -186,10 +186,10 @@
                 android:textSize="12sp"/>
 
             <TextView
-                android:id="@+id/deaths_country"
+                android:id="@+id/deaths"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="876453"
+                android:text="3903659"
                 android:textSize="26sp"
                 android:textColor="@color/black"/>
 
@@ -202,7 +202,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/deaths"
+        android:layout_below="@id/relative_deaths"
         android:paddingVertical="10dp">
 
         <TextView
